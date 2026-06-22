@@ -1,130 +1,117 @@
-# Financial Dashboard — Power BI Project
+# Financial Dashboard — Power BI
 
 ![Financial Dashboard Preview](./assets/financial-dashboard-preview.png)
 
-## 📌 Project Overview
+## Project Overview
 
-This Power BI project presents an interactive **Financial Dashboard** designed to analyze business performance across sales, orders, profit, profit margin, discounts, countries, customer segments, and products. The dashboard helps stakeholders quickly understand key performance indicators, compare current year performance with the prior year, and identify profitable segments and top-selling products.
+This project presents a **Finance Department Dashboard** created in Power BI to analyze business performance across sales, orders, profit, profit margin, discounts, countries, customer segments, and products. The dashboard gives a clear executive-level view of financial performance and helps identify growth trends, profitable areas, discount impact, and underperforming segments.
 
-📄 **Dashboard PDF:** [View Financial Dashboard PDF](./Financial_Dashboard.pdf)
+📄 **Dashboard PDF:** [View Finance Department Dashboard PDF](./Finance_Department_Dashboard_PowerBI.pdf)
 
-> **Note:** Add your exported Power BI PDF to the repository with the exact name `Financial_Dashboard.pdf` so the link above works correctly on GitHub.
+## Objective
 
-## 🎯 Objective
-
-The main objective of this dashboard is to provide a clear financial performance summary that supports business decision-making by answering questions such as:
+The objective of this dashboard is to make financial performance easier to understand through interactive and visual reporting. It helps answer key business questions such as:
 
 - How are sales, orders, profit, profit margin, and discounts performing compared with the previous year?
-- Which countries contribute the most to orders and profit margin?
-- Which discount bands are used most frequently?
-- Which customer segments and products are most profitable?
+- Which countries are contributing the most to order volume and profit margin?
+- How are discounts distributed across discount bands?
+- Which customer segments are the most and least profitable?
 - Which products generate the highest sales?
 - How does sales performance change over time?
 
-## 📊 Key Performance Indicators
+## Key Performance Indicators
 
-The dashboard highlights the following KPIs:
+The dashboard highlights current year performance and compares it with the prior year.
 
-| KPI | Current Value | Prior Year Comparison |
-|---|---:|---:|
-| Sales | 92,311,095 | +249.46% |
-| Orders | 861,132 | +225.36% |
-| Profit | 13,015,238 | +235.58% |
-| Profit Margin | 14.1% | -3.97% |
-| Discount | 7,059,717 | +229.04% |
+| KPI | Current Value | Previous Year | Change |
+|---|---:|---:|---:|
+| Sales | 92,311,095 | 26,415,256 | +249.46% |
+| Orders | 861,132 | 264,674 | +225.36% |
+| Profit | 13,015,238 | 3,878,465 | +235.58% |
+| Profit Margin | 14.1% | 14.7% | -3.97% |
+| Discount | 7,059,717 | 2,145,531 | +229.04% |
 
-## 🧩 Dashboard Features
+## Dashboard Sections
 
-### KPI Cards
-Shows high-level business performance for sales, orders, profit, profit margin, and discount with current year versus prior year comparison.
+### KPI Summary
 
-### Country-Level Analysis
-Includes order volume and profit margin by country, covering countries such as Canada, France, United States, Mexico, and Germany.
+The top section of the dashboard displays the main financial KPIs: sales, orders, profit, profit margin, and discount. Each KPI includes current year performance and comparison with the prior year.
 
-### Discount Band Breakdown
-Displays percentage share by discount band, helping understand how discounting is distributed across low, medium, and high discount categories.
+### Orders by Country
+
+This section shows order distribution across major countries including Canada, France, United States, Mexico, and Germany. It helps identify which regions are generating the highest order volume.
+
+### Profit Margin by Country
+
+This chart compares profit margin across countries. Germany and France show the highest profit margins, while the United States has the lowest profit margin among the displayed countries.
+
+### Discount Band Analysis
+
+The donut chart shows the percentage distribution of discounts by discount band. High discounts represent the largest share, followed by medium and low discount bands.
+
+### Profit Margin by Segment
+
+This section compares profitability across customer segments. Channel Partners has the strongest profit margin, while Enterprise shows a negative profit margin and may require further analysis.
+
+### Sales Trend by Year and Month
+
+The line chart shows sales movement over time and helps identify monthly changes, seasonal patterns, and periods of strong or weak sales performance.
+
+### Product Sales Performance
+
+The product sales chart highlights the top-performing products by sales amount. Products such as Paseo, VTT, and Velo appear among the strongest contributors.
 
 ### Segment and Product Profitability
-Shows profit margin by customer segment and product, making it easier to identify strong and weak performing combinations.
 
-### Sales Trend
-Visualizes sales amount by year and month to identify seasonal movement and performance trends over time.
+The detailed table shows profit margin by segment and product. This helps compare product performance within each customer segment and identify profitable or loss-making combinations.
 
-### Top Products by Sales
-Highlights the top three products by sales, including Paseo, VTT, and Velo.
+## Key Insights
 
-## 🔍 Key Insights
-
-- Sales, orders, profit, and discount increased significantly compared with the previous year.
-- Overall profit margin is positive, but it declined slightly compared with the prior year.
+- Sales, orders, profit, and discounts increased strongly compared with the previous year.
+- Profit margin remains positive overall, but it declined slightly compared with the prior year.
+- Canada has the highest order volume among the displayed countries.
+- Germany and France show the strongest country-level profit margins.
+- High discount band accounts for the largest share of discounts.
 - Channel Partners is the most profitable segment shown in the dashboard.
-- Enterprise shows negative profit margin, indicating a potential area for review.
-- Paseo is the top-selling product by sales amount.
-- Medium and high discount bands make up a large share of total discounts.
+- Enterprise has a negative profit margin, making it an important area for business review.
+- Paseo is the highest-selling product shown in the product sales section.
 
-## 🛠️ Tools Used
+## Tools Used
 
-- **Power BI Desktop** — dashboard design, data modeling, and visualization
+- **Power BI** — dashboard development and visualization
 - **Power Query** — data cleaning and transformation
-- **DAX** — calculated measures and KPI logic
-- **GitHub** — project documentation and version control
+- **DAX** — KPI calculations and comparison measures
+- **GitHub** — project documentation and sharing
 
-## 📁 Recommended Repository Structure
+## Files Included
 
 ```text
 Financial-Dashboard-PowerBI/
 │
 ├── README.md
-├── Financial_Dashboard.pbix
-├── Financial_Dashboard.pdf
+├── Finance_Department_Dashboard_PowerBI.pdf
 │
-├── assets/
-│   └── financial-dashboard-preview.png
-│
-└── data/
-    └── financial_data.csv
+└── assets/
+    └── financial-dashboard-preview.png
 ```
 
-## 🚀 How to Use This Project
+## Business Value
 
-1. Clone or download this repository.
-2. Open `Financial_Dashboard.pbix` in Power BI Desktop.
-3. Review the data model, Power Query transformations, and DAX measures.
-4. Interact with filters and visuals to explore financial performance.
-5. Open `Financial_Dashboard.pdf` for a static dashboard report view.
+This dashboard provides a single-page financial summary that supports faster decision-making. It can help finance and business teams monitor revenue growth, profitability, country-level performance, product contribution, customer segment performance, and discount usage.
 
-## 📌 Suggested GitHub Upload Steps
+## Future Enhancements
 
-1. Export the Power BI report as a PDF and rename it to `Financial_Dashboard.pdf`.
-2. Save the dashboard screenshot as `assets/financial-dashboard-preview.png`.
-3. Add the `.pbix`, `.pdf`, screenshot, and `README.md` files to your repository.
-4. Commit and push the files to GitHub.
+- Add more detailed drill-through analysis for country, segment, and product performance.
+- Include target versus actual performance comparison.
+- Add forecasting for future sales and profit trends.
+- Add more filters for deeper financial analysis.
+- Create a mobile-friendly dashboard layout.
 
-Example commands:
-
-```bash
-git add README.md Financial_Dashboard.pbix Financial_Dashboard.pdf assets/financial-dashboard-preview.png
-git commit -m "Add Power BI financial dashboard project"
-git push origin main
-```
-
-## 📈 Business Value
-
-This dashboard provides a single view of financial performance and helps business users monitor growth, profitability, product performance, discount usage, and regional contribution. It can support sales planning, pricing decisions, discount strategy, and profitability improvement initiatives.
-
-## 🔮 Future Enhancements
-
-- Add slicers for year, country, segment, and product.
-- Add drill-through pages for country and product-level details.
-- Include target versus actual performance metrics.
-- Add forecasting for future sales and profit.
-- Improve mobile dashboard layout for easier viewing on smaller screens.
-
-## 👤 Author
+## Author
 
 **Your Name**  
 Power BI Developer / Data Analyst
 
-## 📄 License
+## License
 
-This project is available for learning, portfolio, and demonstration purposes. Update this section with your preferred license before publishing.
+This project is available for learning, portfolio, and demonstration purposes.
